@@ -21,3 +21,134 @@
   [data-theme="dark"] #page-header::before {
     background: transparent !important;
   }
+
+
+  /* �������ֱ��� */
+:root {
+  --cxl2020mc-radius: 7px;
+  --cxl2020mc-card-border-width: 1px;
+}
+
+/* ǳɫģʽ��ɫ */
+[data-theme=light] {
+  --cxl2020mc-border-color: #e3e8f7;
+  --cxl2020mc-card-bg: #fff;
+  --cxl2020mc-card-border: #e3e8f7;
+  --style-border-always: 1px solid var(--cxl2020mc-card-border);
+  --cxl2020mc-blue: #425AEF;
+}
+
+/* ��ɫģʽ��ɫ */
+[data-theme=dark] {
+  --cxl2020mc-border-color: #42444a;
+  --cxl2020mc-card-bg: #1d1b26;
+  --cxl2020mc-card-border: #42444a;
+  --style-border-always: 1px solid var(--cxl2020mc-card-border);
+  --cxl2020mc-blue: #0084FF;
+}
+
+/* ���������۴�� */
+.twikoo .tk-comments-container>.tk-comment {
+  /* �ڱ߾� */
+  padding: 1rem;
+  /* Բ�� */
+  border-radius: var(--cxl2020mc-radius);
+  /* ������ɫ */
+  background: var(--cxl2020mc-card-bg);
+  /* �䶯����ʱ�� */
+  transition: .3s;
+}
+
+/* ǳɫģʽ���������۴�� */
+[data-theme=light] .twikoo .tk-comments-container>.tk-comment {
+  /* ��Ӱ */
+  box-shadow: var(--card-box-shadow);
+}
+
+/* ǳɫģʽ���������۴����Ӱ�������� */
+[data-theme=light] .twikoo .tk-comments-container>.tk-comment:hover {
+  /* ��Ӱ��ǳɫģʽͻ����θУ� */
+  box-shadow: var(--card-hover-box-shadow);
+}
+
+/* �ڰ�ģʽ���������۴�� */
+[data-theme=dark] .twikoo .tk-comments-container>.tk-comment {
+  /* �߿���ʽ */
+  border-style: solid;
+  /* �߿���� */
+  border-width: var(--cxl2020mc-card-border-width);
+  /* �߿���ɫ */
+  border-color: var(--cxl2020mc-card-border);
+}
+
+/* �豸��Ϣ */
+.twikoo .tk-extra {
+  /* Բ�� */
+  border-radius: var(--cxl2020mc-radius);
+  /* ������ɫ */
+  background: var(--cxl2020mc-card-bg);
+  /* �ڱ߾� */
+  padding: 0.4rem;
+  /* �ױ߾� */
+  margin-bottom: 1rem;
+  /* �䶯����ʱ�� */
+  transition: .3s;
+}
+
+/* ǳɫģʽ�豸��Ϣ */
+[data-theme=light] .twikoo .tk-extra {
+  /* ��Ӱ */
+  box-shadow: var(--card-box-shadow);
+}
+
+/* ǳɫģʽ�豸��Ϣ��Ӱ�������� */
+[data-theme=light] .twikoo .tk-extra:hover {
+  /* ��Ӱ */
+  box-shadow: var(--card-hover-box-shadow);
+}
+
+/* �ڰ�ģʽ�豸��Ϣ */
+[data-theme=dark] .twikoo .tk-extra {
+  /* �߿���ʽ */
+  border-style: solid;
+  /* �߿���� */
+  border-width: var(--cxl2020mc-card-border-width);
+  /* �߿���ɫ */
+  border-color: var(--cxl2020mc-card-border);
+}
+
+/* ���ظ��ఴť */
+.twikoo .tk-expand {
+  /* Բ�� */
+  border-radius: var(--cxl2020mc-radius);
+}
+
+/* ǳɫģʽ���ظ��ఴť */
+[data-theme=light] .twikoo .tk-expand {
+  /* ��Ӱ */
+  box-shadow: var(--card-box-shadow);
+}
+
+/* ǳɫģʽ���ظ��ఴť���������ʱ�� */
+[data-theme=light] .twikoo .tk-expand:hover {
+  /* ��Ӱ */
+  box-shadow: var(--card-hover-box-shadow);
+  /* ������ɫ */
+  background-color: var(--btn-bg);
+}
+
+/* �ڰ�ģʽ���ظ��ఴť���������ʱ�� */
+[data-theme=dark] .twikoo .tk-expand:hover {
+  /* ������ɫ */
+  background-color: var(--cxl2020mc-blue);
+}
+
+/* �ڰ�ģʽ���ظ��ఴť */
+[data-theme=dark] .twikoo .tk-expand {
+  /* �߿���ʽ */
+  border-style: solid;
+  /* �߿���� */
+  border-width: var(--cxl2020mc-card-border-width);
+  /* �߿���ɫ */
+  border-color: var(--cxl2020mc-card-border);
+}
